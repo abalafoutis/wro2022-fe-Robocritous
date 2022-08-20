@@ -1,4 +1,4 @@
 Vehicle's photos
 ====
 
-This directory contains 6 photos of our vehicle (from every side, from top and bottom)
+This directory contains 6 photos of our vehicle (top, bottom, front, rear, left and right)
