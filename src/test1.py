@@ -25,8 +25,10 @@ if __name__ == '__main__':
 
         lower, upper = utils.valTrackBars()
         getLaneCurve(img, lower, upper)
-        cv2.rectangle(img, (0, 260), (300, 320), (0, 0, 255), 2) # wall window
-        cv2.rectangle(img, (320, 320), (330, 330), (255, 255, 0), 2)  # dot window
+        cv2.rectangle(img, (0, 260), (300, 320), (0, 0, 255), 2) # left wall window
+        cv2.rectangle(img, (340, 260), (639, 320), (0, 0, 255), 2) # right wall window
+
+        cv2.rectangle(img, (320, 420), (330, 430), (255, 255, 0), 2)  # dot window
 
         cv2.imshow('vid', img)
         cv2.waitKey(1)

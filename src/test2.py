@@ -27,18 +27,17 @@ if __name__ == '__main__':
 
 
         leftWall = wallThres[260:320, 0:260]
-        dotImage = orangeThres[320:330, 320:330]
+        rightWall = wallThres[260:320, 340:639]
+        dotImage = orangeThres[420:430, 320:330]
 
-        # print("orage Y: " , utils.line_point(orangeImage))
-        # print("blue Y: ", utils.line_point(blueImage))
-        print(np.sum(dotImage))
+
+        print(0.7 - np.sum(rightWall)/3978000)
 
 
 
         cv2.imshow('img', img)
-        cv2.imshow('leftWall', leftWall)
-        cv2.imshow('blue', blueImage)
-        cv2.imshow('dotImage', dotImage)
+        cv2.imshow('rightWall', rightWall)
+        #cv2.imshow('dotImage', dotImage)
 
 
 
